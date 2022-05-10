@@ -1,6 +1,14 @@
 body{
   border: 1px solid black;
 }
+nav{
+  width:50%;
+  height:40px;
+  border:1px solid black;
+  background-color:#aaa;
+  margin:auto;
+  margin-top:10px;
+}
 header{
   height:100px;
   width:100%;
