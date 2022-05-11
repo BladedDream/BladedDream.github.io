@@ -1,5 +1,5 @@
 body{
-  margin:2px;
+  margin:2px solid black;
 }
 header{
   width:100%;
@@ -23,10 +23,10 @@ main{
   margin-top:50px;
 }
 section{
-  width:100%;
+  width:75%;
   height:320px;
   background-color:#fff;
-  border:5px solid gray;
+  border:5px solid grey;
   margin:auto;
   margin-top:20px;
 
@@ -56,8 +56,8 @@ figure{
   margin-top:100px;
 }
 aside{
-  width:30%;
-  height:75px;
+  width:25%;
+  height:80px;
   border:3px solid #000;
   margin-top:5%;
   background-color:grey;
