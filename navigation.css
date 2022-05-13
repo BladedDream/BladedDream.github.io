@@ -1,0 +1,32 @@
+ul{
+  list-style-type: none;
+  margin: 5px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black;
+}
+
+li{
+  float: left;
+  border-right: 3px solid white;
+}
+
+li:last-child{
+  border-right: none;
+}
+li:nth-child(2):hover{
+  /*background-color: red*/
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  color:red;
+}
+li:hover{
+  background-color: yellow;
+}
