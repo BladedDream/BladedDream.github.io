@@ -3,30 +3,79 @@ ul{
   margin: 5px;
   padding: 0px;
   overflow: hidden;
-  background-color: black;
+  /*background-color: black;*/
+}
+.ul_1{
+  background-color: red;
+}
+.ul_2{
+  background-color: green;
+}
+.ul_3{
+  background-color: blue;
 }
 
 li{
   float: left;
+  /*border-right: 3px solid white;*/
+}
+.li_1{
   border-right: 3px solid white;
+}
+.li_2{
+  border-right: 4px solid gray;
+}
+.li_3{
+  border-right: 5px solid black;
 }
 
 li:last-child{
   border-right: none;
 }
-li:nth-child(2):hover{
-  /*background-color: red*/
-}
+
+/*li:nth-child(2):hover{
+  background-color: red
+}*/
+
 li a{
   display: block;
-  color: white;
+  /*color: white;*/
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-li a:hover{
-  color:red;
+.a_1{
+  color: white;
 }
-li:hover{
+.a_2{
+  color: gray;
+}
+.a_3{
+  color: black;
+}
+/*li a:hover{
+  color:red;*/
+
+.a_1:hover{
+  color: black;
+}
+.a_2:hover{
+  color: white;
+}
+.a_3:hover{
+  color: gray;
+}
+
+/* li:hover{
   background-color: yellow;
+} */
+
+.li_1:hover{
+  background-color: green;
+}
+.li_2:hover{
+  background-color: blue;
+}
+.li_3:hover{
+  background-color: red;
 }
