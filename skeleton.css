@@ -1,5 +1,12 @@
-body{
+html{
   background-color: gray;
+  border: 3px solid black;
+
+}
+
+body{
+  background-color: lightgray;
+  border: 4px solid lightblue;
 }
 
 ul{
@@ -7,8 +14,8 @@ ul{
   margin: 5px;
   padding: 0px;
   overflow: hidden;
-  background-color: white;
-  border: 1px solid black;
+  background-color: none;
+  /* border: 1px solid black; */
   width: 75%;
   margin: auto;
   text-align: center;
@@ -19,6 +26,19 @@ li{
   width: 100px;
   /* border: 1px solid black; */
   background-color: red;
+}
+
+li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li:hover{
+  background-color: lime;
+}
+
+li a:hover{
+  color: red;
 }
 
 .headers{
