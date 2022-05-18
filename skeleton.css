@@ -36,12 +36,13 @@ li a{
 }
 
 li:hover{
-  background-color: lime;
+  background-color: black;
+  color: white;
   border: 1px solid white;
 }
 
 li a:hover{
-  color: red;
+  color: lightblue;
 }
 
 .headers{
