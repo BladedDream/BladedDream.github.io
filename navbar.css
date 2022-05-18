@@ -1,0 +1,40 @@
+ul{
+  width: 33%;
+  height: 60px;
+  background-color: #aaa;
+  list-style-type: none;
+  margin: auto;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  width: 100px;
+  border: 1px solid black;
+  margin-top: 12px;
+  margin-left: -5px;
+  background-color: red;
+}
+
+li:hover{
+  background-color: #eee;
+  color:red;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li a:hover{
+  color: maroon;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+  li{
+    width: 20px;
+  }
+}
