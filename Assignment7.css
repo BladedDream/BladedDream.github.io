@@ -1,0 +1,41 @@
+.header{
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  background-color: black;
+  color: lightblue;
+}
+
+.span{
+  font-size: 30px;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.space{
+  clear: both;
+}
+
+.menu{
+  float: left;
+  margin-right: 5px;
+  padding: 3px;
+}
+
+.body{
+  height: 400px;
+  background-color: lightblue;
+}
+
+.section{
+  height: 135px;
+  background-color: lightgray;
+  margin: 5px;
+}
+
+.footer{
+  height: 55px;
+  background-color: black;
+  color: lightblue;
+  margin-top: 5px;
+}
