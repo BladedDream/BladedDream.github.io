@@ -3,12 +3,77 @@
   <head>
     <meta charset="utf-8">
     <title>Div Only</title>
-    <link rel="stylesheet" href="Assignment7.css">
+    <style>
+    html{
+      font-family: sans-serif;
+    }
+
+    .header{
+      margin: 0;
+      padding: 0;
+      height: 70px;
+      background-color: black;
+      color: #01a49e;
+    }
+
+    .titlespan{
+      font-size: 35px;
+      padding: 0;
+      margin-left: 10px;
+    }
+
+    .headingspan{
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .bodyspan{
+      padding: 10px;
+    }
+
+    .space{
+      clear: both;
+    }
+
+    .menu{
+      float: left;
+      padding: 8px;
+    }
+
+    a{
+      color: inherit;
+      text-decoration-color: #01a49e;
+    }
+
+    .body{
+      height: 400px;
+      background-color: #01a49e;
+    }
+
+    .section{
+      height: 150px;
+      background-color: #c5c6c7;
+      margin: 10px;
+    }
+
+    .footer{
+      height: 55px;
+      background-color: black;
+      color: #01a49e;
+      margin-top: 5px;
+    }
+
+    .footerspan{
+      padding: 0;
+      margin-left: 10px;
+    }
+    </style>
+    <!-- <link rel="stylesheet" href="Assignment7.css"> -->
   </head>
 
   <div class="header">
     <br>
-    <div class="span">Website using only DIV Elements</div>
+    <div class="titlespan">Website using only DIV Elements</div>
   </div>
 
   <div class="space">
@@ -31,21 +96,37 @@
 
   <div class="body">
 
-    <div class="span">Section Header</div>
+    <div class="headingspan"><b>Section Header</b></div>
 
     <div class="section">
-      <h2>Nested Section 1</h2>
+      <div class="headingspan"><b>Nested Section 1</b></div>
+      <div class="bodyspan">
+        Sunt consectetur incurreret irure mentitum est quem ex
+        ullamco. Vidisse aute constias qui singulis est tempor
+        fabulas, velit qui doctrina ut nulla, quae firmissimum
+        cupidatat irure quibusdam, anim eu singulis, laborum aute do
+        deserunt graviterque, sed ex quorum tempor aliqua, tamen
+        quibusdam ne quis quae.
+      </div>
     </div>
 
     <div class="section">
-      <h2>Nested Section 2</h2>
+      <div class="headingspan"><b>Nested Section 2</b></div>
+      <div class="bodyspan">
+        Sunt consectetur incurreret irure mentitum est quem ex
+        ullamco. Vidisse aute constias qui singulis est tempor
+        fabulas, velit qui doctrina ut nulla, quae firmissimum
+        cupidatat irure quibusdam, anim eu singulis, laborum aute do
+        deserunt graviterque, sed ex quorum tempor aliqua, tamen
+        quibusdam ne quis quae.
+      </div>
     </div>
 
   </div>
 
   <div class="footer">
     <br>
-    <span>© 2014 Monday Times. All rights reserved.</span>
+    <div class="footerspan">© 2014 Monday Times. All rights reserved.</div>
   </div>
 
 </html>

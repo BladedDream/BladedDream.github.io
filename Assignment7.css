@@ -1,15 +1,28 @@
+html{
+  font-family: sans-serif;
+}
+
 .header{
   margin: 0;
   padding: 0;
   height: 70px;
   background-color: black;
-  color: lightblue;
+  color: #01a49e;
 }
 
-.span{
+.titlespan{
   font-size: 30px;
   padding: 0;
   margin-left: 10px;
+}
+
+.headingspan{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.bodyspan{
+  padding: 10px;
 }
 
 .space{
@@ -22,20 +35,30 @@
   padding: 3px;
 }
 
+a{
+  color: inherit;
+  text-decoration-color: #01a49e;
+}
+
 .body{
   height: 400px;
-  background-color: lightblue;
+  background-color: #01a49e;
 }
 
 .section{
-  height: 135px;
-  background-color: lightgray;
-  margin: 5px;
+  height: 150px;
+  background-color: #c5c6c7;
+  margin: 10px;
 }
 
 .footer{
   height: 55px;
   background-color: black;
-  color: lightblue;
+  color: #01a49e;
   margin-top: 5px;
+}
+
+.footerspan{
+  padding: 0;
+  margin-left: 10px;
 }
