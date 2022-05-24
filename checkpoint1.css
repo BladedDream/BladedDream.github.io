@@ -1,9 +1,13 @@
+html{
+  font-family: sans-serif;
+}
+
 nav{
   margin: 0;
   padding: 0;
   width: 100%;
   height: 80px;
-  background-color: #5A5B5E;
+  background-color: #343436;
 }
 
 ul{
@@ -11,16 +15,25 @@ ul{
   margin: 10px;
   padding: 10px;
   overflow: hidden;
+  text-align: center;
   float: right;
 }
 
 li{
   display: inline-block;
-  /* width: 100px; */
+  width: 110px;
+  height: 20px;
+  border: 4px solid #32A3DD;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   margin-left: 10px;
+
+  background-color: #5A5B5E;
 }
 
 a{
+  text-decoration: none;
+  font-size: 13px;
   color: white;
 }
 
