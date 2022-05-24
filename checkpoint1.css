@@ -1,0 +1,48 @@
+nav{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #5A5B5E;
+}
+
+ul{
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  float: right;
+}
+
+li{
+  display: inline-block;
+  /* width: 100px; */
+  margin-left: 10px;
+}
+
+a{
+  color: white;
+}
+
+body{
+  background-color: #343436;
+}
+
+.mountains{
+  width: 100%;
+  height: 100%;
+}
+
+.logo{
+  clear: both;
+  display: block;
+  margin: auto;
+}
+
+footer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 160px;
+  background-color: #5A5B5E;
+}
