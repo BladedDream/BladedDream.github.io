@@ -83,13 +83,14 @@ body{
   position: absolute;
   left: 25%;
   bottom: 40%;
+}
 
 .logo1{
   clear: both;
   /* display: block; */
   position: absolute;
   left: 5%;
-  bottom: 30%;
+  bottom: 84%;
 }
 
 
