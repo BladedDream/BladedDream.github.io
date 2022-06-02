@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+#main{
+  height: 80vh;
+  display: flex;
+  min-height: calc(100vh - 40vh);
+}
+
+#main article{
+  flex: 1;
+  text-align: center;
+}
+
+#main nav, #main aside{
+  flex: 0 0 20vw;
+  background: pink;
+  text-align: center;
+}
+
+#main nav{
+  /* height: 70vh; */
+  order: -1;
+}
+
+ul{
+  list-style-type: none;
+  margin: 5px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+li{
+  height: 20px;
+  background-color: firebrick;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+header, footer, article, nav{
+  padding: 1rem;
+}
+
+header, footer{
+  background-color: firebrick;
+  height: 10vh;
+}
+
+@media screen and (max-width: 625px){
+  #main{
+    /* display: block; */
+    flex-direction: column;
+  }
+
+  nav{
+  height: 30vh;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+
+  article{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYjFlNDZjZDktOTA0NS00OWQ5LWJjNzMtYTY5ZGY0MzM0ODEzXkEyXkFqcGdeQXVyMzM4MDQ2MjE@._V1_QL75_UY281_CR89,0,190,281_.jpg);
+  }
+
+  aside{
+  height: 30vh;
+  border-top: 1px solid #000;
+  padding-top: 50px;
+  }
+
+  footer{
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+
+  header{
+    border-bottom: 1px solid #000;
+    text-align: center;
+  }
+}
