@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+header{
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size:
+}
+
 body{
   margin: 0;
 }
@@ -14,7 +20,29 @@ body{
 
 #main article{
   flex: 1;
-  text-align: center;
+  /* display: flex;
+  flex-flow: column wrap;
+  overflow: hidden; */
+  /* text-align: center; */
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.house{
+  width: 30%;
+  height: 30%;
+  align-items: flex-start;
+}
+
+p{
+  /* margin-bottom: 50px; */
+  padding-bottom: 50px;
+  /* display: inline; */
+
 }
 
 #main nav, #main aside{
@@ -42,6 +70,19 @@ li{
   border-radius: 5px;
 }
 
+li a{
+  text-decoration: none;
+  color: white;
+}
+
+li:hover{
+  background-color: maroon;
+}
+
+li a:hover{
+  color: pink;
+}
+
 header, footer, article, nav{
   padding: 1rem;
 }
@@ -55,6 +96,7 @@ header, footer{
   #main{
     /* display: block; */
     flex-direction: column;
+    display: flex;
   }
 
   nav{
@@ -64,9 +106,8 @@ header, footer{
   padding-bottom: 20px;
   }
 
-  article{
-    background-image: url(https://m.media-amazon.com/images/M/MV5BYjFlNDZjZDktOTA0NS00OWQ5LWJjNzMtYTY5ZGY0MzM0ODEzXkEyXkFqcGdeQXVyMzM4MDQ2MjE@._V1_QL75_UY281_CR89,0,190,281_.jpg);
-  }
+  /* article{
+  } */
 
   aside{
   height: 30vh;
@@ -82,5 +123,10 @@ header, footer{
   header{
     border-bottom: 1px solid #000;
     text-align: center;
+  }
+  li{
+    width: 25vh;
+    margin: auto;
+    margin-top: 10px;
   }
 }
