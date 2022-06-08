@@ -13,7 +13,7 @@
       }
       #myGrid{
         display: grid;
-        grid-template-columns: 1fr 333px 333px 333px 1fr;
+        grid-template-columns: 1fr repeat(3,333px) 1fr;
         grid-auto-rows: minmax(50px, auto);
         grid-template-areas:
         ". header header header ."
@@ -31,15 +31,24 @@
         flex-direction: column;
         align-items: center;
       }
+      /* header a:hover{
+        display: url(https://georgerrmartin.com/wp-content/themes/GRRM/images/h-lannister-new.gif);
+      } */
       nav {
         border: 1px solid black;
         grid-area: navbar;
       }
-      ul {
+      nav ul {
         list-style-type: none;
+        padding: 0px;
+        margin: 0px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Montaga', serif;
       }
       #banner {
         border: 1px solid black;
@@ -109,6 +118,10 @@
           "footer"
           "bottom";
         }
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
         #cards{
           flex-direction: column;
         }
@@ -123,19 +136,19 @@
     <div id="myGrid">
 
       <header>
-        <a href="https://www.georgerrmartin.com/excerpt-from-the-winds-of-winter/"><img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/shield-spin.jpg" alt="logo"></a>
+        <a id="shield" href="https://www.georgerrmartin.com/excerpt-from-the-winds-of-winter/"><img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/shield-spin.jpg" alt="logo"></a>
         <h1>GEORGE R.R. MARTIN</h1>
       </header>
 
       <nav>
         <ul>
-          <li>HOME</li>
-          <li>NOT A BLOG</li>
-          <li>ABOUT GEORGE</li>
-          <li>BOOKS</li>
-          <li>FOR FANS</li>
-          <li>NEWS</li>
-          <li>MERCHANDISE</li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">NOT A BLOG</a></li>
+          <li><a href="#">ABOUT GEORGE</a></li>
+          <li><a href="#">BOOKS</a></li>
+          <li><a href="#">FOR FANS</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">MERCHANDISE</a></li>
         </ul>
       </nav>
 
