@@ -6,85 +6,155 @@
 
     <style>
 
-    </style>
+    body {
+      background-image: url(https://michaeldevers.com/wp-content/uploads/2019/04/Image.BridgeOfDeath-1024x615.jpg);
+      background-size: cover;
+    }
+    #logo {
+      display: block;
+      margin: auto;
+      border: 3px solid black;
+      border-radius: 20px
+    }
+    #wrapper {
+      padding: 10px;
+    }
+    legend {
+      color: goldenrod;
+      position: absolute;
+    }
+    fieldset {
+      background-color: black;
+      opacity: .8;
+      border-radius: 20px;
+      display: block;
+      margin: auto;
+      width:600px;
+      color: white;
+    }
+    .textInput label {
+      display: block;
+    }
+    .textInput input {
+      margin: 4px 0px 12px 0px;
+      padding: 8px;
+      width: 200px;
+      border-radius: 20px
 
+    }
+    input[type=radio] {
+      margin-left: 16px;
+    }
+    textarea {
+      font-family: Verdana, sans-serif;
+      padding: 8px;
+      width: 400px;
+    }
+    #buttonContainer {
+      margin: 24px 0px;
+    }
+    #buttonContainer input[type=button] {
+      border: 1px solid black;
+      border-radius: 6px;
+      padding: 12px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    p{
+      padding: 5px;
+    }
+    </style>
   </head>
 
   <body>
 
-    <form>
+    <img id="logo" src="https://www.thereporteronline.com/wp-content/uploads/2022/04/Monty-Python-pic-3.jpg?w=1860" alt="monty python image" width = 500px>
 
-      <p>What is your name?</p>
-      <div id="NameContainer" class="textInput">
-        <!-- <label for="NameId">Name:</label> -->
-        <input type="text" id="NameId" name="Name">
-      </div>
+    <div id="wrapper">
+      <fieldset>
+        <legend>Answer these questions to proceed...</legend>
+        <form>
+          <br>
 
-      <p>What is your quest?</p>
-      <div id="QuestContainer" class="textInput">
-        <!-- <label for="QuestId">Quest:</label> -->
-        <input type="text" id="QuestId" name="Quest">
-      </div>
+          <p>What is your name?</p>
+          <div id="NameContainer" class="textInput">
+            <!-- <label for="NameId">Name:</label> -->
+            <input type="text" id="NameId" name="Name">
+          </div>
 
-      <p>What is your favorite color?</p>
-      <div>
-        <input type="radio" id="red" name="color">
-        <label for="red">Red</label>
-      </div>
-      <div>
-        <input type="radio" id="orange" name="color">
-        <label for="orange">Orange</label>
-      </div>
-      <div>
-        <input type="radio" id="yellow" name="color">
-        <label for="yellow">Yellow</label>
-      </div>
-      <div>
-        <input type="radio" id="green" name="color">
-        <label for="green">Green</label>
-      </div>
-      <div>
-        <input type="radio" id="blue" name="color">
-        <label for="blue">Blue</label>
-      </div>
-      <div>
-        <input type="radio" id="indigo" name="color">
-        <label for="indigo">Indigo</label>
-      </div>
-      <div>
-        <input type="radio" id="violet" name="color">
-        <label for="violet">Violet</label>
-      </div>
-      <div>
-        <input type="radio" id="coconut" name="color">
-        <label for="coconut">Coconut</label>
-      </div>
+          <p>What is your quest?</p>
+          <div id="QuestContainer" class="textInput">
+            <!-- <label for="QuestId">Quest:</label> -->
+            <input type="text" id="QuestId" name="Quest">
+          </div>
 
-      <p>What is the air speed velocity of an unlaiden swallow?</p>
-      <div id="QuestContainer" class="textInput">
-        <input type="text" id="QuestId" name="Quest">
-      </div>
+          <p>What is your favorite color?</p>
+          <div>
+            <input type="radio" id="red" name="color">
+            <label for="red">Red</label>
+          </div>
+          <div>
+            <input type="radio" id="orange" name="color">
+            <label for="orange">Orange</label>
+          </div>
+          <div>
+            <input type="radio" id="yellow" name="color">
+            <label for="yellow">Yellow</label>
+          </div>
+          <div>
+            <input type="radio" id="green" name="color">
+            <label for="green">Green</label>
+          </div>
+          <div>
+            <input type="radio" id="blue" name="color">
+            <label for="blue">Blue</label>
+          </div>
+          <div>
+            <input type="radio" id="indigo" name="color">
+            <label for="indigo">Indigo</label>
+          </div>
+          <div>
+            <input type="radio" id="violet" name="color">
+            <label for="violet">Violet</label>
+          </div>
+          <div>
+            <input type="radio" id="coconut" name="color">
+            <label for="coconut">Coconut</label>
+          </div>
 
-      <div>
-        <input type="radio" id="red" name="swallow">
-        <label for="red">African</label>
-      </div>
-      <div>
-        <input type="radio" id="orange" name="swallow">
-        <label for="orange">European</label>
-      </div>
+          <p>What is the air speed velocity of an unlaiden swallow?</p>
+          <div class="textInput">
+            <input type="text" id="SpeedId" name="Speed">
+          </div>
 
-      <label for="codeFeelingsId">
-        Please show your work
-      </label>
-      <div>
-        <textarea id="codeFeelingsId" name="codeFeelings">Default Text</textarea>
-      </div>
+          <p>Is it African or European?</p>
+          <div>
+            <input type="radio" id="african" name="swallow">
+            <label for="african">African</label>
+          </div>
+          <div>
+            <input type="radio" id="european" name="swallow">
+            <label for="european">European</label>
+          </div>
+
+          <label for="workId">
+            <p>Please show your work</p>
+          </label>
+          <div>
+            <textarea id="workId" name="work">Type Here</textarea>
+          </div>
+
+          <div id="buttonContainer">
+            <input type="submit" value="Submit">
+          </div>
 
 
 
 
-    </form>
+        </form>
+      </fieldset>
+    </div>
+
 
   </body>
 </html>
