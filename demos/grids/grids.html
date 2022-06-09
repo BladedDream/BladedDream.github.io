@@ -30,8 +30,7 @@
       #cards,
       aside,
       main,
-      footer,
-      #bottom {
+      footer{
         border: 3px solid gray;
       }
       header {
@@ -44,6 +43,9 @@
       header h1{
         font-family: 'Montaga', serif;
         font-size: 60px;
+      }
+      #socialSection {
+        text-align: right;
       }
       #shieldImage:hover{
         animation: spin 1.1s infinite;
@@ -61,6 +63,7 @@
       }
       nav {
         grid-area: navbar;
+        padding: 12px;
       }
       nav ul {
         list-style-type: none;
@@ -113,12 +116,26 @@
 
       main {
         grid-area: blog;
+        background-color: lightgray;
+        padding: 24px;
+      }
+      main h2 {
+        font-family: font-family: 'Montaga', serif;
+      }
+      main h3 a,
+      main p a {
+        color: #1c4268;
+      }
+      main h3 a {
+        text-decoration: none;
       }
       footer {
         grid-area: footer;
       }
       #bottom {
         grid-area: bottom;
+        background-image: url(https://www.georgerrmartin.com/theme/footer-bg.jpg);
+        background-size: cover;
       }
 
       @media screen and (max-width: 1000px) {
@@ -142,6 +159,9 @@
         header h1{
           font-size: 36px;
         }
+        #socialSection {
+          text-align: center;
+        }
         nav ul {
           flex-direction: column;
           align-items: center;
@@ -162,11 +182,14 @@
       <header>
         <a id="shieldImage" href="https://www.georgerrmartin.com/excerpt-from-the-winds-of-winter/"><img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/shield-spin.jpg" alt="logo"></a>
         <h1>GEORGE R.R. MARTIN</h1>
-        <div>
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-
+        <div id="socialSection">
+          <img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/facebook-overall.jpg" alt="facebook">
+          <img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/twitter-overall.jpg" alt="twitter">
+          <img src="https://www.georgerrmartin.com/theme/app-overall.jpg" alt="westeros">
+          <form>
+            <input type="text" id="searchbar" name="searchQuery" placeholder="Search...">
+            <input type="submit" id="searchButton">
+          </form>
         </div>
 
       </header>
@@ -202,11 +225,23 @@
         </div>
       </aside>
 
-      <main>BLOGPOSTS</main>
+      <main>
+        <h2>CURRENT GRRM BLOGPOSTS</h2>
+        <h3><a href="#">Six Days to Joe</a></h3>
+        <p>
+          Six days to go.  Six days to Joe. Leaphorn, that is. It is June 6 as I type this.   Next weekend, JUNE 12, will see the debut of DARK WINDS on AMC  and AMC+. Yes, it has “Winds” in the… <a href="#">Read more »</a>
+        </p>
+        <h3><a href="#"></a></h3>
+        <p>
+
+        </p>
+        <img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/not-a-blog.png?v=2" alt="">
+      </main>
 
       <footer>FOOTER</footer>
 
-      <div id="bottom">BOTTOM</div>
+      <div id="bottom">
+      </div>
 
     </div>
   </body>
