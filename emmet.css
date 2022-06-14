@@ -1,0 +1,45 @@
+/* div{
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  border-radius: 25px;
+  border: 2px solid black;
+  margin: auto;
+}
+ul{
+  list-style-type: none;
+  text-align: left;
+  display: block;
+  margin: auto;
+}
+li{
+
+} */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+#main{
+  display: flex;
+  height: 90vh;
+}
+#main article{
+  flex: 1;
+}
+#main nav, #main aside{
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main nav{
+  order: -1;
+}
+header, footer, article, nav, aside{
+  padding: 16px;
+  background-image: url();
+}
+header, footer{
+  background-color: yellowgreen;
+  height: 25vh;
+}
