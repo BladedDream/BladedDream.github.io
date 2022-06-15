@@ -96,7 +96,7 @@
       #moreAppearances {
         background-image: url(https://www.georgerrmartin.com/theme/events-bg.jpg);
         background-position: right bottom;
-        /* background-repeat: no-repeat; */
+        background-size: cover;
         background-color: black;
         padding: 24px;
       }
@@ -108,7 +108,7 @@
       #viewPublications {
         background-image: url(https://www.georgerrmartin.com/theme/releases-bg.jpg);
         background-position: right bottom;
-        /* background-repeat: no-repeat; */
+        background-size: cover;
         padding: 24px;
       }
       #viewPublications h3 {
@@ -119,17 +119,21 @@
       #publicationImageContainer{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        /* justify-content: space-around; */
+      }
+      #videoPlayer {
       }
       #valyrianSteel {
-        height: 215px;
+        height: 194px;
         background-image: url(https://georgerrmartin.com/wp-content/themes/GRRM/images/valyrian-steel-v3.jpg?v=3);
         background-position: right bottom;
+        padding: 24px;
       }
       #stageCoach {
-        height: 230px;
+        height: 180px;
         background-image: url(https://georgerrmartin.com/wp-content/themes/GRRM/images/stagecoach-v2.jpg?v=3);
         background-position: right bottom;
+        padding: 24px;
       }
 
       #moreAppearances,
@@ -231,15 +235,17 @@
         #valyrianSteel,
         #stageCoach {
           background-repeat: no-repeat;
-          background-size: cover;
+          /* background-size: cover; */
         }
         #valyrianSteel {
-          /* height: 100%;
-          width: 100% */
+        background-position: center;
         }
         #stageCoach {
-          /* height: 10vh;
-          width: 100% */
+          background-position: center;
+        }
+        #videoPlayer {
+          width: 100%
+          height: 100%;
         }
       }
     </style>
