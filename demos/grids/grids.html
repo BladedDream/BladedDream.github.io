@@ -21,7 +21,6 @@
         ". banner banner banner ."
         ". cards cards cards ."
         ". aside blog blog ."
-        ". footer footer footer ."
         ". bottom bottom bottom .";
       }
       header,
@@ -30,7 +29,7 @@
       #cards,
       aside,
       main,
-      footer{
+      footer {
         border: 3px solid gray;
       }
       header {
@@ -97,14 +96,50 @@
       #moreAppearances {
         background-image: url(https://www.georgerrmartin.com/theme/events-bg.jpg);
         background-position: right bottom;
-        background-repeat: no-repeat;
+        /* background-repeat: no-repeat; */
         background-color: black;
+        padding: 24px;
       }
       #moreAppearances h3 {
         font-family: 'Montaga', serif;
         text-decoration: none;
         color: white;
       }
+      #viewPublications {
+        background-image: url(https://www.georgerrmartin.com/theme/releases-bg.jpg);
+        background-position: right bottom;
+        /* background-repeat: no-repeat; */
+        padding: 24px;
+      }
+      #viewPublications h3 {
+        font-family: 'Montaga', serif;
+        text-decoration: none;
+        color: white;
+      }
+      #publicationImageContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      #valyrianSteel {
+        height: 215px;
+        background-image: url(https://georgerrmartin.com/wp-content/themes/GRRM/images/valyrian-steel-v3.jpg?v=3);
+        background-position: right bottom;
+      }
+      #stageCoach {
+        height: 230px;
+        background-image: url(https://georgerrmartin.com/wp-content/themes/GRRM/images/stagecoach-v2.jpg?v=3);
+        background-position: right bottom;
+      }
+
+      #moreAppearances,
+      #viewPublications,
+      #videoPlayer,
+      #valyrianSteel,
+      #stageCoach {
+        border: 2px solid gray;
+      }
+
       .yellow {
         color: #dbbf73;
       }
@@ -114,6 +149,12 @@
       .white {
         color: white;
       }
+      .lightblue {
+        color: #92add1;
+      }
+      .textgray {
+        color: #a1a1a1;
+      }
 
       main {
         grid-area: blog;
@@ -121,7 +162,7 @@
         padding: 24px;
       }
       main h2 {
-        font-family: font-family: 'Montaga', serif;
+        font-family: 'Montaga', serif;
       }
       main h3 a,
       main p a {
@@ -130,6 +171,9 @@
       main h3 a {
         text-decoration: none;
       }
+      #riseofthedragon {
+        font-family: 'Montaga', serif;
+      }
       footer {
         grid-area: footer;
       }
@@ -137,6 +181,14 @@
         grid-area: bottom;
         background-image: url(https://www.georgerrmartin.com/theme/footer-bg.jpg);
         background-size: cover;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      #bottomText {
+        margin: 2px;
+        padding: 0;
+        text-align: center;
       }
 
       @media screen and (max-width: 1000px) {
@@ -151,7 +203,6 @@
           "blog"
           "cards"
           "aside"
-          "footer"
           "bottom";
         }
         header {
@@ -173,6 +224,22 @@
         #cards img{
           flex-grow: 0;
           width: 100%;
+        }
+        #moreAppearances,
+        #viewPublications,
+        #videoPlayer,
+        #valyrianSteel,
+        #stageCoach {
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #valyrianSteel {
+          /* height: 100%;
+          width: 100% */
+        }
+        #stageCoach {
+          /* height: 10vh;
+          width: 100% */
         }
       }
     </style>
@@ -218,30 +285,83 @@
       </section>
 
       <aside>
+
         <div id="moreAppearances">
           <h3>NEXT APPEARANCE</h3>
           <p class="yellow">August 26 - 28, 2022</p>
           <p><span class="underline white">Bubonicon 53</span> <span class="white">Guest</span></p>
           <a href="https://georgerrmartin.com/appearances/"><img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/more-appearances.jpg" alt="More Appearances"></a>
         </div>
+
+        <div id="viewPublications">
+          <h3>NEW PUBLICATION</h3>
+          <div id="publicationImageContainer">
+            <img src="https://georgerrmartin.com/wp-content/uploads/2022/04/wildcards2022001_cvr-scaled.jpg" alt="Wild Cards" width=100px;>
+            <div class="">
+              <p class="lightblue">June 15, 2022</p>
+              <p class="white">WILD CARDS Marvel</p>
+              <p class="white">Comic Book 1</p>
+              <p class="textgray">(Comic Monthly)</p>
+            </div>
+          </div>
+          <a id="publicationImage" href="https://georgerrmartin.com/publications/"><img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/view-pubs.png" alt="View Publications"></a>
+        </div>
+
+        <div id="videoPlayer">
+          <iframe width="323" height="180" src="https://www.youtube.com/embed/aRM3-xL5o7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="valyrianSteel"></div>
+        <div id="stageCoach"></div>
+
       </aside>
 
       <main>
+
         <h2>CURRENT GRRM BLOGPOSTS</h2>
         <h3><a href="#">Six Days to Joe</a></h3>
         <p>
           Six days to go.  Six days to Joe. Leaphorn, that is. It is June 6 as I type this.   Next weekend, JUNE 12, will see the debut of DARK WINDS on AMC  and AMC+. Yes, it has “Winds” in the… <a href="#">Read more »</a>
         </p>
-        <h3><a href="#"></a></h3>
-        <p>
 
+        <h3><a href="#">Stonemaiden Is Back</a></h3>
+        <p>
+          There’s a brand new treat for Wild Cards fans over at Tor.com. “Hearts of Stone” is a terrific new novelette from Emma Newman.   It marks the return of Stonemaiden, the Cornish ace first introduced in KNAVES OVER QUEENS.   That was… <a href="#">Read more »</a>
         </p>
+
+        <h3><a href="#">Here Come The Dragons</a></h3>
+        <p>
+          Are those dragons I see? Yes indeed. It’s May, which means the August 21 premiere of HOUSE OF THE DRAGON is only a few months away. And HBO has just released a new trailer, to give you another taste of… <a href="#">Read more »</a>
+        </p>
+
+        <h3><a href="#">The Winds of June</a></h3>
+        <p>
+          The Dark Winds will start blowing in June.   June 12, to be precise. That’s the day that DARK WINDS, a new series based on the classic bestselling Navajo detective novels by Tony Hillerman, will premiere on AMC and AMC+.   I… <a href="#">Read more »</a>
+        </p>
+
+        <h3><a href="#">The Dragons Are Coming…</a></h3>
+        <p>
+          … they’re on the wing, and will be arriving in August. Details here: https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/ <a href="#">Read more »</a>
+        </p>
+
+        <h3><a id="riseofthedragon" href="#">THE RISE OF THE DRAGON</a></h3>
+        <p>
+          We’re so excited to announce The Rise of The Dragon, a lavish visual history of House Targaryen – the iconic family at the heart of HBO’s Game of Thrones prequel series, House of the Dragon – featuring over 180 all-new… <a href="#">Read more »</a>
+        </p>
+
+        <h3><a href="#">Dealer Takes Two</a></h3>
+        <p>
+          Kings and deuces may not be as iconic… or ominous… a poker hand as aces and eights, but it’s not a bad hand to be dealt… and Tor will be dealing those cards to all the Wild Cards fans out… <a href="#">Read more »</a>
+        </p>
+
         <img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/not-a-blog.png?v=2" alt="">
       </main>
 
-      <footer>FOOTER</footer>
-
       <div id="bottom">
+        <p id="bottomText">© 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.</p>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>
 
     </div>
