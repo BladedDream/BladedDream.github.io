@@ -82,8 +82,8 @@ body{
   background-image: url(mountains.jpg);
   background-size: cover;
   height: 500px;
-  display: block;
-  margin: auto;
+  /* display: block;
+  margin: auto; */
 }
 
 .logo{
@@ -98,10 +98,7 @@ body{
   grid-area: logo;
   background-image: url(Logo_with_Text.png);
   background-size: cover;
-  height: 300px;
-  display: block;
-  margin: auto;
-  /* position: absolute; */
+  height: 400px;
 
 }
 
@@ -115,7 +112,7 @@ body{
 
 main{
   grid-area: main;
-  height: 200px;
+  height: 500px;
 }
 
 
@@ -125,8 +122,9 @@ footer{
   width: 100%;
   height: 160px;
   background-color: #5A5B5E;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
+  grid-area: footer;
 }
 
 form{
@@ -138,10 +136,11 @@ form{
   grid-template-columns: 1fr repeat(3,333px) 1fr;
   grid-auto-rows: minmax(50px, auto);
   grid-template-areas:
-  ". nav nav nav ."
+  ". . nav nav nav"
   "mountains mountains mountains mountains mountains"
   ". . logo. ."
-  ". main main main .";
+  ". main main main ."
+  "footer footer footer footer footer";
 
 }
 
